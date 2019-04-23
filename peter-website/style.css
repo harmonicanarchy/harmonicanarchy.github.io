@@ -6,3 +6,9 @@
 .logo {
   background: url(assets/logo_neu.png);
 }
+header {
+  position:relative;
+  left: 0;
+  top: 0;
+  right: 0;
+}
