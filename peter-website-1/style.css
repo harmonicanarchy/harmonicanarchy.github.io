@@ -54,11 +54,11 @@ header img.logo {
 header nav > ul {
   list-style-type: none;
   float: right;
-  height: 55px;
-  line-height: 55px;
 }
 header nav > ul > li {
   float: left;
+  height: 55px;
+  line-height: 55px;
 }
 header nav > ul > li > a {
   display: inline-block;
