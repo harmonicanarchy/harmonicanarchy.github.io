@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400i,600,700|Playfair+Display|Roboto+Slab|Slabo+27px&subset=latin-ext');
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: #222;
+  font-family: "Open Sans";
+}
+.content a, footer a {
+  color: #b57ded;
+  text-decoration: none;
+}
+.content a:hover, footer a:hover {
+  color: #6d3d9e;
+}
+header {
+  position:relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 15px 0;
+  /*background: #f2f2f2;*/
+}
+.header-image-container {
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+}
+.header-image-container > img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  display: block;
+}
+.header-image-container > h1.opener {
+  display:block;
+  width: 100%;
+  font-size:45px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header img.logo {
+  height: 55px;
+}
+header nav > ul {
+  list-style-type: none;
+  float: right;
+  height: 55px;
+  line-height: 55px;
+}
+header nav > ul > li {
+  float: left;
+}
+header nav > ul > li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: #424242;
+  margin: 0 10px;
+  font-size: 18px;
+  font-family: "Slabo 27px";
+  position: relative;
+}
+header nav > ul > li > a::before {
+  content:"";
+  position: absolute;
+  left:0;
+  bottom: 11px;
+  width: 0%;
+  height: 4px;
+  background: #1b9856;
+  transition: all 200ms ease-out;
+}
+header nav > ul > li.active > a::before, header nav > ul > li > a:hover::before {
+  width: 100%;
+}
+.content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bold {
+  font-weight: 700;
+}
+h1.opener {
+  font-family: "Slabo 27px";
+  font-size: 32px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+footer {
+  padding: 20px 0;
+  font-size: 16px;
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  background: #f0f0f0;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
